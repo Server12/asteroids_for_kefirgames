@@ -1,4 +1,4 @@
-# asteroids_for_kefirgames
+# Asteroid (test task project)
 
 ### Refference: https://freeasteroids.org/
 
