@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Asteroids.Runtime.Weapons
 {
-    public class WeaponsManager :IWeaponsManager, IInitializable<WeaponData[], WeaponPrefabs, Transform>, IUpdate
+    public class WeaponsManager : IWeaponsManager, IInitializable<WeaponData[], WeaponPrefabs, Transform>, IUpdate
     {
         private readonly Camera _camera;
         private readonly IGameController _gameController;
@@ -66,7 +66,10 @@ namespace Asteroids.Runtime.Weapons
                         _camera);
             }
 
-            throw new NotImplementedException();
+            throw new NotImplementedException($"For weapon:{weaponData.WeaponType}")
+            {
+                Source = nameof(WeaponsManager)
+            };
         }
 
         public void Update(float deltaTime)

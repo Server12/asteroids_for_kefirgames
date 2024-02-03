@@ -1,5 +1,4 @@
 using System;
-using Asteroids.Runtime;
 using Asteroids.Runtime.Data;
 using UnityEngine;
 
@@ -16,15 +15,18 @@ namespace Asteroids.Runtime.Configs
         
         public ScoreData GetScoreData(GameEnemy enemy)
         {
-            for (int i = 0; i < _scoresConfig.Length; i++)
+            foreach (var scoreData in _scoresConfig)
             {
-                if (_scoresConfig[i].GameEnemy == enemy)
+                if (scoreData.GameEnemy == enemy)
                 {
-                    return _scoresConfig[i];
+                    return scoreData;
                 }
             }
 
-            throw new NotImplementedException($"{enemy}");
+            throw new NotImplementedException($"{enemy}")
+            {
+                Source = nameof(EnemiesData)
+            };
         }
     }
 }

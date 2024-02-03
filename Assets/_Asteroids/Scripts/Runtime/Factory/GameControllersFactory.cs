@@ -44,7 +44,10 @@ namespace Asteroids.Runtime.Factory
                 case GameControllerType.ProgressManager:
                     return new ProgressManager();
                 default:
-                    throw new NotImplementedException($"{type}");
+                    throw new NotImplementedException($"Controller for {type}")
+                    {
+                        Source = nameof(GameControllersFactory)
+                    };
             }
         }
     }
