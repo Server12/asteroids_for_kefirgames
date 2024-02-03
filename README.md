@@ -1,4 +1,4 @@
-# Asteroid (test task project)
+# Asteroids (test task project)
 
 ### Refference: https://freeasteroids.org/
 
