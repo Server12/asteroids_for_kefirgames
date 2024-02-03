@@ -1,7 +1,9 @@
 {
     "name": "GameEditorAssembly",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:5529a99f911a84d5cacaf9ec2a87e397"
+    ],
     "includePlatforms": [
         "Editor"
     ],

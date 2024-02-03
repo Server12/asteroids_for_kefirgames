@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a076aad7094513ab7c079c720cb775, type: 3}
+  m_Name: EnemiesData
+  m_EditorClassIdentifier: 
+  AsteroidsData:
+    _enabled: 1
+    _generateDelaySeconds: 3
+    _maxOnScreen: 10
+    _spawnSides:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 0.5}
+    - {x: 0, y: 0.5}
+    - {x: 0.5, y: 0}
+    - {x: 0.5, y: 1}
+    _asteroidSprites:
+    - {fileID: 21300000, guid: f95ec67c6ada04c2cba55de8f8c89052, type: 3}
+    - {fileID: 21300000, guid: 942329e508a0d4ad7b87024410ae0b95, type: 3}
+    - {fileID: 21300000, guid: 23eda31494ff244a896345345a4a7975, type: 3}
+    - {fileID: 21300000, guid: c03bb52939da84fbf8e8a676ca4c9c13, type: 3}
+    _depthScales:
+    - 1.1
+    - 1
+    - 0.5
+    - 0.25
+    speedRange:
+      _min: 0.5
+      _max: 1
+    rotationRange:
+      _min: -180
+      _max: 180
+    _shardsCount: 4
+    radiusShardsSpawnPositionMultiplier: 1.549
+    shardsSpeedMultiplier: 1.5
+    shardsRotationSpeedMultiplier: 0.8
+  UfoData:
+    _enabled: 1
+    _generateDelaySeconds: 20
+    _maxOnScreen: 2
+    _spawnSides:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 0.5}
+    - {x: 0, y: 0.5}
+    - {x: 0.5, y: 0}
+    - {x: 0.5, y: 1}
+    _generateByOneDelaySeconds: 10
+    _playerSpeedMultiplier: 0.698
+  _scoresConfig:
+  - _enemyType: 0
+    _killScore: 2
+  - _enemyType: 1
+    _killScore: 5
+  - _enemyType: 2
+    _killScore: 25
+  - _enemyType: 3
+    _killScore: 50
+  - _enemyType: 4
+    _killScore: 100
+  - _enemyType: 5
+    _killScore: 200

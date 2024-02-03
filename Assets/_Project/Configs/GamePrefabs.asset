@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadd0c630c5641c7a28634a625184315, type: 3}
+  m_Name: GamePrefabs
+  m_EditorClassIdentifier: 
+  MainUIPrefab: {fileID: 6877863479462366025, guid: a474020f4931c400f9bfd164538a8819, type: 3}
+  GameOverPopupPrefab: {fileID: 2187475380836505783, guid: 28528ce51a6b4499891cb113ebf41744, type: 3}
+  PlayerViewPrefab: {fileID: 7629910209893590380, guid: 6e4dfbc11991f45a7b096b2e7fe0c5b0, type: 3}
+  WeaponPrefabs:
+    LaserViewPrefab: {fileID: 5012058683102203389, guid: 21d9190e25e2c4d088764d8ea40013d7, type: 3}
+    BulletViewPrefab: {fileID: 1890879484635521255, guid: d7e3c462ca91e439fae468a34e84d5bf, type: 3}
+  EnemiesPrefabs:
+    AsteroidViewPrefab: {fileID: 3619101210790413915, guid: 436a789bbaf10406987488667b311c1c, type: 3}
+    UfoViewPrefab: {fileID: 3361407329799340228, guid: 06618a4e3009c425898cdaa606405ad6, type: 3}

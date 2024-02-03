@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26215ce232244e85b978fe1ea7f86939, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  rotateAngle: 45
+  rotateSpeed: 5
+  maxSpeed: 4
+  accelerationSpeed: 2.7
+  drag: 0.497
+  weapons:
+  - shootCoolDown: 0.2
+    bulletSpeed: 15
+    _maxBullets: 0
+    _bulletChargeCooldown: 0
+    _weaponType: 0
+  - shootCoolDown: 1
+    bulletSpeed: 5
+    _maxBullets: 3
+    _bulletChargeCooldown: 10
+    _weaponType: 1
