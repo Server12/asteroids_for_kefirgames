@@ -48,7 +48,14 @@ namespace Asteroids.Runtime.Physics
                 otherCollision.CurrentPosition);
         }
 
-
+        /// <summary>
+        /// Check intersection circle point by line
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <param name="checkRadius"></param>
+        /// <param name="checkPos"></param>
+        /// <returns></returns>
         private bool IsIntersectLine(Vector3 start, Vector3 end, float checkRadius, Vector3 checkPos)
         {
             Vector3 d = end - start;
@@ -63,7 +70,6 @@ namespace Asteroids.Runtime.Physics
             if (discriminant < 0) return false;
             
             return  discriminant >= 0 && discriminant * discriminant >= 4 * a * c;
-            ;
         }
     }
 }
